@@ -1,0 +1,14 @@
+{
+  "name": "Citrus Hacks",
+  "version": "0.2",
+  "description": "Putting life first",
+  "manifest_version": 2,
+  "author": "Emily, Owen, Surabhi, John for Citrus Hacks",
+  "permissions": [
+    "<all_urls>","webRequest","webRequestBlocking", "history"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
+}
