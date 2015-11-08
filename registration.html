@@ -7,18 +7,32 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<script type="text/javascript"> 
 		document.getElementById('userEmail').required = false;
-		function showEmailField() {
 
-			var chbox = document.getElementById("helpButton");
+		function showButtonOption() {
+			var chbox = document.getElementById('installer1');
+			var vis = "none";
+			if (chbox.checked) {
+				vis = "inline";
+			}
+			else {
+				document.getElementById('helpEmailField').style.display = "none";
+				document.getElementById('helpButton').checked = false;
+				document.getElementById('userEmail').required = false;
+			}
+			document.getElementById('helpButtonField').style.display = vis;
+		}
+
+		function showEmailField() {
+			var chbox = document.getElementById('helpButton');
 			var vis = "none";
 			if (chbox.checked){
 				vis = "block";
 				document.getElementById('userEmail').required = true;
 			}
-			if (!chbox.checked){
+			else {
 				document.getElementById('userEmail').required = false;
 			}
-			document.getElementById('helpEmail').style.display = vis;
+			document.getElementById('helpEmailField').style.display = vis;
 		}
 	</script>
 </head>
@@ -46,15 +60,15 @@
 				</fieldset>
 
 				<fieldset>
-					<label for "selfInstall">*Will you be the user? </label> <br />
-					<input type="radio" name="selfInstall" id="installer1" value="yes" required="required"> Yes
-					<input type="radio" name="selfInstall" id="installer2" value="no" required="required"> No
+					<label for "userInstall">*Will you be the user? </label> <br />
+					<input type="radio" onclick="showButtonOption()" name="userInstall" id="installer1" value="yes" required="required"> Yes
+					<input type="radio" onclick="showButtonOption()" name="userInstall" id="installer2" value="no" required="required"> No
 				</fieldset>
-				<fieldset>	
+				<fieldset id="helpButtonField">	
 					<input type="checkbox" name="helpButton" id="helpButton" onclick="showEmailField()" value="yes"> 
 					<p>I want emergency Help button that can put me in contact with a suicide hotline operator.</p><br />
 				</fieldset>
-				<fieldset class="text" id="helpEmail">
+				<fieldset class="text" id="helpEmailField">
 					<label for="userEmail">*Your E-mail: 
 					</label><input type="email" name="userEmail" id="userEmail" size="30" pattern="^[a-zA-Z0-9]*\@[a-zA-Z0-9]+\.[a-zA-Z]+$" >
 				</fieldset>
