@@ -13,13 +13,13 @@ body {
 
 .wrapper {
 	background-color: #FFF;
-	box-shadow: 15px 15px 2px orange;
+	box-shadow: 10px 10px 2px #ea2;
 	margin: 5% 20%;
-	padding: 50px;
+	
 }
 
 section, header {
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-bottom: 10px;
 	min-height: 10%;
 }
@@ -29,6 +29,19 @@ section {
 	overflow: auto;
 	padding-left: 20%;
 	padding-right: 20%;
+	padding-bottom: 3%;
+}
+
+header {
+	background-color: #fc3;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+header img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 form {
@@ -37,7 +50,7 @@ form {
 
 fieldset {
 	border: none;
-	padding: 10px 0px;
+	padding: 10px 0px 0px 0px;
 }
 
 fieldset label {
@@ -50,7 +63,7 @@ fieldset label {
 
 input {
 	display: inline;
-	margin: 0px 0px 20px 20px;
+	margin: 10px 10px 20px 20px;
 	padding: 5px 15px;
 }
 
@@ -68,15 +81,24 @@ input {
 
 #text input {
 	display: block;
-	border-color: orange;
+	border-color: #fc3;
+	border-style: solid;
 }
 
 #text input:focus {
-	box-shadow: 2px 2px 5px orange;
+	box-shadow: 2px 2px 5px #fc3;
 }
 
 #submit {
-	margin: 0;
+	font-size: 150%;
+	display: block;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fc3;
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
 }
 
 
