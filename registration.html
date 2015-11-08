@@ -2,34 +2,32 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Placeholder Title</title>
+	<title>safety net</title>
 	<link rel="stylesheet" href="citrushack.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 	<div class="wrapper">
+		<header> <img src="logo2.png" alt="logo"> </header>
 		<section>
-			<header> <h1> Placeholder Header </h1> </header>
-
-
 			<p>Required fields are marked with an asterisk *</p>
 			<form>
 				<fieldset id="text">
 					<label for="userFName">*First Name: </label>
-					<input type="text" name="userFName" id="userFName" required="required">
+					<input type="text" name="userFName" id="userFName" required="required" autofocus="autofocus" size="20" >
 					<label for="userLName">*Last Name: </label>
-					<input type="text" name="userLName" id="userLName" required="required">
+					<input type="text" name="userLName" id="userLName" required="required" size="20">
 					<label for="userEmail">*E-mail: 
-					</label><input type="email" name="userEmail" id="userEmail" size="40" placeholder="name@domain.com" required="required" pattern="^[a-zA-Z0-9]*\@[a-zA-Z0-9]+\.[a-zA-Z]+$">
+					</label><input type="email" name="userEmail" id="userEmail" size="30" placeholder="name@domain.com" required="required" pattern="^[a-zA-Z0-9]*\@[a-zA-Z0-9]+\.[a-zA-Z]+$" >
 					<br />
 					<p> Emergency Contact </p>
 					<label for="contactFName">*First Name: </label>
-					<input type="text" name="contactFName" id="contactFName" required="required">
+					<input type="text" name="contactFName" id="contactFName" required="required" size="20">
 					<label for="contactLName">*Last Name: </label>
-					<input type="text" name="contactLName" id="contactLName" required="required">
+					<input type="text" name="contactLName" id="contactLName" required="required" size="20">
 					<label for="contactEmail">*E-mail: 
-					</label><input type="email" name="contactEmail" id="contactEmail" size="40" placeholder="name@domain.com" required="required" pattern="^[a-zA-Z0-9]*\@[a-zA-Z0-9]+\.[a-zA-Z]+$">
+					</label><input type="email" name="contactEmail" id="contactEmail" size="30" placeholder="name@domain.com" required="required" pattern="^[a-zA-Z0-9]*\@[a-zA-Z0-9]+\.[a-zA-Z]+$">
 				</fieldset>
 
 				<fieldset>
@@ -45,9 +43,6 @@
 				<input type="submit" id="submit" value="Submit">
 			</form>
 		</section>
-		<footer>
-			Placeholder footer <br />
-		</footer>
 	</div>
 
 </body>
