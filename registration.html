@@ -42,13 +42,13 @@
 					<label for="contactLName">*Last Name: </label>
 					<input type="text" name="contactLName" id="contactLName" required="required" size="20">
 					<label for="contactEmail">*E-mail: 
-					</label><input type="email" name="contactEmail" id="contactEmail" size="30" placeholder="name@domain.com" required="required" pattern="^[a-zA-Z0-9]*\@[a-zA-Z0-9]+\.[a-zA-Z]+$">
+					</label><input type="email" name="contactEmail" id="contactEmail" size="30" required="required" pattern="^[a-zA-Z0-9]*\@[a-zA-Z0-9]+\.[a-zA-Z]+$">
 				</fieldset>
 
 				<fieldset>
-					<label for "installer">*Will you be the user? </label> <br />
-					<input type="radio" name="selfInstall" id="installer" value="yes" required="required"> Yes
-					<input type="radio" name="selfInstall" id="installer" value="no" required="required"> No
+					<label for "selfInstall">*Will you be the user? </label> <br />
+					<input type="radio" name="selfInstall" id="installer1" value="yes" required="required"> Yes
+					<input type="radio" name="selfInstall" id="installer2" value="no" required="required"> No
 				</fieldset>
 				<fieldset>	
 					<input type="checkbox" name="helpButton" id="helpButton" onclick="showEmailField()" value="yes"> 
@@ -56,7 +56,7 @@
 				</fieldset>
 				<fieldset class="text" id="helpEmail">
 					<label for="userEmail">*Your E-mail: 
-					</label><input type="email" name="userEmail" id="userEmail" size="30" placeholder="name@domain.com" pattern="^[a-zA-Z0-9]*\@[a-zA-Z0-9]+\.[a-zA-Z]+$" >
+					</label><input type="email" name="userEmail" id="userEmail" size="30" pattern="^[a-zA-Z0-9]*\@[a-zA-Z0-9]+\.[a-zA-Z]+$" >
 				</fieldset>
 				<input type="submit" id="submit" value="Submit">
 			</form>
