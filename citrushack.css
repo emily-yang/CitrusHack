@@ -48,7 +48,11 @@ header img {
 }
 
 form {
-	padding: 20px;
+	padding: 0 20px 20px 20px;
+}
+
+.text p {
+	font-weight: bold;
 }
 
 fieldset {
@@ -66,37 +70,51 @@ fieldset label {
 
 input {
 	display: inline;
-	margin: 10px 10px 20px 20px;
+	margin: 0px 10px 20px 20px;
 	padding: 5px 15px;
 }
 
-#text {
+.text {
 	border: none;
+	margin-top: 20px;
 	padding: 0;
 }
 
-#text label {
+.text p {
+	font-weight: bold;
+}
+
+.text label {
 	display: block;
 	width: 120px;
 	padding-right: 30px;
 }
 
-#text input {
+.text input {
 	display: block;
 	border-color: #fc3;
 	border-style: solid;
 }
 
-#text input:focus {
+.text input:focus {
 	box-shadow: 2px 2px 5px #fc3;
 }
 
+#helpButton {
+	float: left;
+}
+
+#helpButton + p {
+	display: inline;
+}
+
+#helpEmail {
+	display: none;
+}
 #submit {
 	font-size: 150%;
 	display: block;
-	margin-bottom: 0px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 30px auto 0 auto;
 	background-color: #fc3;
 	color: #fff;
 	padding: 10px 15px;
