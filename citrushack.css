@@ -51,6 +51,7 @@ fieldset label {
 input {
 	display: inline;
 	margin: 0px 0px 20px 20px;
+	padding: 5px 15px;
 }
 
 #text {
@@ -67,6 +68,11 @@ input {
 
 #text input {
 	display: block;
+	border-color: orange;
+}
+
+#text input:focus {
+	box-shadow: 2px 2px 5px orange;
 }
 
 #submit {
